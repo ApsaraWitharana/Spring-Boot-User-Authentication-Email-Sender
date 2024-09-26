@@ -1,5 +1,6 @@
 package com.codedecode.testemail.controller;
 
+
 import com.codedecode.testemail.services.SendEmailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,7 +14,9 @@ public class EmailController {
 
     @GetMapping("sendEmail")
     public String sendEmail(){
-        sendEmailService.sendEmail("sachiniapsara703@gmail.com","Test Body","Test Subject");
+        sendEmailService.sendEmail("asachini095@gmail.com","User Login Successfully!! Thank you! \uD83E\uDD1D❤\n","Test Subject");
         return "Send Successfully!!";
     }
+
+
 }
